@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { removeTodo, markAsCompletedTodo } from "./actions";
+import { displayAlert } from "./thunks";
 import TodoListItem from "./TodoListItem";
 import NewTodoForm from "./NewTodoForm";
 import './TodoList.css';
@@ -12,7 +13,8 @@ const TodoList = ({todos = [], onRemovePressed, onCompletedPressed }) =>(
         key={index}
         todo={todo} 
         onRemovePressed={onRemovePressed}
-        onCompletedPressed={onCompletedPressed}/>)}
+        onCompletedPressed={onCompletedPressed}
+        displayAlert={displayAlert}/>)}
     </div>
 )
 
