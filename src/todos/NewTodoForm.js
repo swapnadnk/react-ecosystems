@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
-import { addTodoRequest } from "./thunks";
-import { getTodos } from "./selectors";
+import { addTodoRequest } from "./thunks.js";
+import { getTodos } from "./selectors.js";
 
 const FormContainer = styled.div`
     border-radius: 8px;

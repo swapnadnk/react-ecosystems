@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import TodoList from './todos/TodoList';
+import TodoList from './todos/TodoList.js';
 import { hot } from 'react-hot-loader'
 
 const AppContainer = styled.div`

@@ -1,10 +1,10 @@
 import React, {useEffect} from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
-import TodoListItem from "./TodoListItem";
-import { loadTodos, removeTodoRequest, completedTodoRequest } from "./thunks";
-import NewTodoForm from "./NewTodoForm";
-import { getTodosLoading, getCompletedTodos, getInCompleteTodos } from "./selectors";
+import TodoListItem from "./TodoListItem.js";
+import { loadTodos, removeTodoRequest, completedTodoRequest } from "./thunks.js";
+import NewTodoForm from "./NewTodoForm.js";
+import { getTodosLoading, getCompletedTodos, getInCompleteTodos } from "./selectors.js";
 
 const ListWrapper = styled.div`
     max-width: 700px;

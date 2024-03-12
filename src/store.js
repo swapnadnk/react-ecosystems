@@ -4,7 +4,7 @@ import storage from "redux-persist/lib/storage";
 import autoMergeLevel2 from "redux-persist/lib/stateReconciler/autoMergeLevel2";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
-import { todos } from "./todos/reducers";
+import { todos } from "./todos/reducers.js";
 
 const reducers = { todos }
 
